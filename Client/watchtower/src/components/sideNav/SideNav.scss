@@ -1,0 +1,27 @@
+.sideNav {
+  // border: 5px solid red;
+  height: 100%;
+
+  .sideNavList {
+    font-size: 0px;
+    padding: 0;
+    .sideNavListItem {
+        list-style-type: none;
+        width:100%;
+      .listItemButton {
+        width:100%;
+        text-align: left;
+
+        .dot {
+          height: 10px;
+          width: 10px;
+          border-radius: 50%;
+          display: inline-block;
+        }
+        .buttonText{
+            font-size: 14px;
+        }
+      }
+    }
+  }
+}

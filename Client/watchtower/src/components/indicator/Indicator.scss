@@ -1,0 +1,24 @@
+.indicatorContainer {
+  // border: 5px solid red;
+
+  .indicatorTitle {
+  }
+  .indicatorStatusContainer {
+    margin: 10px 0px 0px 0px;
+  }
+  .indicatorGraphicContainer {
+    height: 300px;
+    border: 2px solid blue;
+    border-radius: 0px;
+    margin: 0px 12px 0px 12px;
+
+    .graph{
+      width:100px;
+      height:100px;
+    }
+  }
+  .indicatorDescriptionContainer {
+    text-align: justify;
+    margin: 0px 12px 0px 12px;
+  }
+}

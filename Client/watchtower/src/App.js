@@ -1,26 +1,49 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Container, Row, Col } from 'react-bootstrap';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import SideNav from './components/sideNav/SideNav'
+import Header from './components/header/Header'
+import Footer from './components/footer/Footer'
+import Indicator from './components/indicator/Indicator'
+
+import './App.scss';
+
+
+class App extends React.Component {
+
+
+  render() {
+    return (
+      <div className="App">
+        <Header />
+        
+
+        <Container fluid={true}>
+          <Row>
+            <br/>
+          </Row>
+          <Row >
+            <Col sm={4} md={3} lg={2}>
+              <div className="sideNavContainer">
+                <SideNav />
+              </div>
+            </Col>
+            <Col sm={8} md={8} lg={8}>
+              <div className="indicatorContainer">
+                <Indicator />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+
+        <Footer />
+
+
+
+      </div>
+    );
+  }
+
 }
 
 export default App;

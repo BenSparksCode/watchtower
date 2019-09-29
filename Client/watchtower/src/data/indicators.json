@@ -1,0 +1,40 @@
+{
+    "indicators": [
+        {
+            "name": "gdp_growth",
+            "title": "GDP Growth",
+            "description": "GDP growth is a lagging measure of an economy's health. When GDP growth decreases, the economy hasn't been as productive as it previously was. The technical definition of a recession is when an economy experiences two consecutive quarters of decreasing GDP, or negative GDP growth.",
+            "status": 3,
+            "api": "www.facebook.com"
+        },
+        {
+            "name": "yield_curve",
+            "title": "Yield Curve",
+            "description": "Some description lol.",
+            "status": 1,
+            "api": "www.facebook.com"
+        },
+        {
+            "name": "unemployment_rate",
+            "title": "Unemployment Rate",
+            "description": "Some description lol.",
+            "status": 3,
+            "api": "www.facebook.com"
+        },
+        {
+            "name": "gold_price",
+            "title": "Gold Price",
+            "description": "Some description lol.",
+            "status": 2,
+            "api": "www.facebook.com"
+        },
+        {
+            "name": "copper_price",
+            "title": "Copper Price",
+            "description": "Some description lol.",
+            "status": 1,
+            "api": "www.facebook.com"
+        }
+
+    ]
+}
