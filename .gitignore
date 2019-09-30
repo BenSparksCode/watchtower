@@ -126,3 +126,6 @@ db.sqlite3
 
 #PyCharm configs
 .idea
+
+#API Keys
+api_keys.py
