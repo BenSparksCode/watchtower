@@ -1,6 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { Card } from 'react-bootstrap'
+// import { Card } from 'react-bootstrap'
+import { Card, CardHeader, CardContent, Button } from '@material-ui/core';
+
 
 import IndicatorGraphic from './indicatorGraphic/IndicatorGraphic'
 import {
@@ -55,9 +57,8 @@ class Indicator extends React.Component {
             return (
                 <div className="indicatorContainer">
                     <Card border="dark">
-                        <Card.Header>
-                            <h3 className="indicatorTitle">No indicator selected</h3>
-                        </Card.Header>
+                        <CardHeader title={"No indicator selected"} />
+
                         <div className="indicatorStatusContainer">
                             <p>Please select an indicator...</p>
                         </div>
@@ -68,9 +69,7 @@ class Indicator extends React.Component {
             return (
                 <div className="indicatorContainer">
                     <Card border="dark">
-                        <Card.Header>
-                            <h3 className="indicatorTitle">{this.props.title}</h3>
-                        </Card.Header>
+                        <CardHeader title={this.props.title} />
 
                         <div className="indicatorStatusContainer">
                             <p>Status: {this.renderStatusText()}</p>
@@ -86,7 +85,6 @@ class Indicator extends React.Component {
                             <p><b>Description:</b>  {this.props.description}</p>
                         </div>
                     </Card>
-                    <button onClick={this.testThunk}>TEST</button>
                 </div>
             )
         }

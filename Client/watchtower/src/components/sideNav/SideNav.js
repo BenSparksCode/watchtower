@@ -1,9 +1,12 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { 
+import { Card, CardHeader, CardContent, Button } from '@material-ui/core';
+
+
+import {
     setIndicatorSelected,
     setIndicatorData
- } from '../../actions'
+} from '../../actions'
 
 import indicatorData from '../../data/indicators.json'
 
@@ -35,10 +38,10 @@ class SideNav extends React.Component {
             indicators.map(indicator => {
                 return (
                     <li className="sideNavListItem">
-                        <button className="listItemButton" onClick={() => this.indicatorClicked(indicator)}>
+                        <Button className="listItemButton" onClick={() => this.indicatorClicked(indicator)}>
                             <span class="dot" style={{ "backgroundColor": statusColors[indicator.status - 1] }}></span>
                             <span class="buttonText"> {indicator.title}</span>
-                        </button>
+                        </Button>
                     </li>
                 )
             })
@@ -48,12 +51,15 @@ class SideNav extends React.Component {
 
     render() {
         return (
-            <div className="sideNav">
-                <h4>Indicators</h4>
-                <ul className="sideNavList">
-                    {this.renderIndicatorList()}
-                </ul>
-            </div>
+            <Card className="sideNav">
+                <CardHeader title="Indicators" />
+
+                <CardContent >
+                    <ul className="sideNavList">
+                        {this.renderIndicatorList()}
+                    </ul>
+                </CardContent>
+            </Card>
         )
     }
 }

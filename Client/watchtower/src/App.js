@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Card } from '@material-ui/core';
+
 
 import SideNav from './components/sideNav/SideNav'
 import Header from './components/header/Header'
@@ -16,16 +18,21 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-        
+
 
         <Container fluid={true}>
+
           <Row>
-            <br/>
+            <br />
           </Row>
+
           <Row >
             <Col sm={4} md={3} lg={2}>
               <div className="sideNavContainer">
-                <SideNav />
+                <Card>
+                  <SideNav />
+                </Card>
+
               </div>
             </Col>
             <Col sm={8} md={8} lg={8}>
