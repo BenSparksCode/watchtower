@@ -5,9 +5,6 @@ import { } from '../../actions'
 
 import './Footer.scss'
 
-//TODO: Stop using Navbar - make footer scroll with screen
-//Otherwise it obscures text
-
 class Footer extends React.Component {
     render() {
         return (

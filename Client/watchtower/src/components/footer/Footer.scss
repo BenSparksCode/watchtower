@@ -1,23 +1,29 @@
-.footerContainer{
-    position: absolute;
-    bottom: 0;
-    height: 80px;
-    width: 100%;
+.footerContainer {
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  width: 100%;
+  background-color: #343a40 !important;
+  color: #fff !important;
 
-    .footerText{
-        color: white;
-        font-size: 17px;
-        padding: 0px;
-        margin: 10px 0px 0px 0px;
+  .footerText {
+    color: white;
+    font-size: 17px;
+    padding: 0px;
+    margin: 10px 0px 0px 0px;
+  }
+
+  .socialLinksContainer {
+    margin: 3px 0px 0px 0px;
+    a {
+      margin-left: 10px;
+      margin-right: 10px;
     }
-
-    .socialLinksContainer{
-        margin: 3px 0px 0px 0px;
-        a{
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-    }
-
+  }
 }
 
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
