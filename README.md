@@ -4,6 +4,6 @@ Watchtower is a Economic risk-monitoring web app in its early stages of developm
 
 Watchtower is built using the following technologies:
 #### Back-End:
-Python, Django, PostgreSQL, Graphene (GraphQL in Python)
+Python, Django, PostgreSQL, Graphene
 #### Front-End:
 JavaScript, React, Redux, Apollo GraphQL 
