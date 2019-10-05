@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { Navbar } from 'react-bootstrap';
+import { AppBar, Toolbar, Typography, Button, IconButton } from '@material-ui/core';
 
 import { } from '../../actions'
 
@@ -10,20 +10,27 @@ import WatchtowerImg from '../../assets/img/Watchtower Logo.svg'
 
 
 class Header extends React.Component {
+
+
     render() {
         return (
-            <Navbar bg="dark" variant="dark">
-                <div className="headerContainer">
-                    <img className="headerImg" src={WatchtowerImg} alt="Watchtower Logo" />
-                    <h1 className="header">Watchtower</h1>
-                </div>
-            </Navbar>
+            <AppBar position="static" className="app-bar">
+                <Toolbar>
+                    <IconButton edge="start" className="header-menu-btn" color="inherit" aria-label="menu">
+
+                        <img className="header-img" src={WatchtowerImg} alt="Watchtower Logo" />
+                        <Typography variant="h4" className="header-title">
+                            Watchtower
+                        </Typography>
+                    </IconButton>
+                </Toolbar>
+            </AppBar>
         )
     }
 }
 
 const mapStateToProps = (state, ownProps) => {
-    
+
     return {
 
     }

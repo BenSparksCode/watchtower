@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
 import { Card } from '@material-ui/core';
 
 
@@ -19,34 +18,17 @@ class App extends React.Component {
       <div className="App">
         <Header />
 
-
-        <Container fluid={true}>
-
-          <Row>
-            <br />
-          </Row>
-
-          <Row >
-            <Col sm={4} md={3} lg={2}>
               <div className="sideNavContainer">
                 <Card>
                   <SideNav />
                 </Card>
-
               </div>
-            </Col>
-            <Col sm={8} md={8} lg={8}>
+ 
               <div className="indicatorContainer">
                 <Indicator />
               </div>
-            </Col>
-          </Row>
-        </Container>
 
         <Footer />
-
-
-
       </div>
     );
   }
