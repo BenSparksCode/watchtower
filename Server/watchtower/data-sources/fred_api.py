@@ -18,8 +18,8 @@ def callFredApi(indicator):
     response = requests.get(whole_url)
     return response.json()
 
-# if(__name__ == "__main__"):
-#     final_res = callFredApi("yield_curve")
-#     print(final_res)
+if(__name__ == "__main__"):
+    final_res = callFredApi("unemployment")
+    print(final_res)
 
 
